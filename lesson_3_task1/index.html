@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 25 September About Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My details</h1>
+        <div class="block">
+            <div class="name">
+                <div class="name_name">Name</div>
+                <!-- Исправлено на тип "text" -->
+                <input type="text" placeholder="First and last name">
+            </div>
+            <div class="name">
+                <div class="name_name">Email</div>
+                <!-- Исправлено на тип "email" для валидации email -->
+                <input type="email" placeholder="example@domain.com">
+            </div>
+            <div class="name">
+                <div class="name_name">Phone</div>
+                <!-- Исправлено на тип "tel" для ввода телефона -->
+                <input type="tel" placeholder="+996 *** *** ***">
+            </div>
+        </div>
+        
+        <h1>Delivery address</h1>
+        <div class="block">
+            <div class="name">
+                <div class="name_name">Address</div>
+                <!-- Исправлено на тип "text" -->
+                <input type="text" placeholder="Your address">
+            </div>
+            <div class="name">
+                <div class="name_name">Post code</div>
+                <!-- Исправлено на тип "text" -->
+                <input type="text" placeholder="Post code">
+            </div>
+            <div class="name">
+                <div class="name_name">Country</div>
+                <!-- Исправлено на тип "text" -->
+                <input type="text" placeholder="Country">
+            </div>
+        </div>
+        
+        <h1>Card details</h1>
+        <div class="block">
+            <div class="name">
+                <div class="card_type">Card type</div>
+                <div class="cards">
+                    <!-- Добавлены атрибуты name для выбора одной из опций -->
+                    <label>
+                        Visa
+                        <input type="radio" name="card_type" value="Visa">
+                    </label>
+                    <label>
+                        AmEx
+                        <input type="radio" name="card_type" value="AmEx">
+                    </label>
+                    <label>
+                        MasterCard
+                        <input type="radio" name="card_type" value="MasterCard">
+                    </label>
+                </div>
+            </div>
+            <div class="name">
+                <div class="name_name">Card number</div>
+                <!-- Исправлено на тип "text" -->
+                <input type="text" placeholder="*** *** *** ***">
+            </div>
+            <div class="name">
+                <div class="name_name">Security code</div>
+                <!-- Исправлено на тип "password" для скрытия кода -->
+                <input type="password" placeholder="***">
+            </div>
+            <div class="name">
+                <div class="name_name">Name on card</div>
+                <!-- Исправлено на тип "text" -->
+                <input type="text" placeholder="Exact name as on the card">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

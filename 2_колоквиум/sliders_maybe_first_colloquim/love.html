@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Признание в любви</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9e6e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff69b4;
+            animation: fadeIn 2s;
+        }
+
+        .message {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .reveal-button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .reveal-button:hover {
+            background-color: #ff1493;
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .hidden-message.show {
+            display: block;
+            animation: fadeIn 1s;
+        }
+
+        .heart {
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Я тебя люблю!</h1>
+        <p class="message">С каждым днем я все больше понимаю, что ты - это то, что мне нужно.</p>
+        <button class="reveal-button">Узнать больше</button>
+        <div class="hidden-message">
+            <p>Ты - мое вдохновение, моя радость и моя жизнь. Без тебя мир был бы пуст.</p>
+            <img src="data:image/jpeg;base64,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" alt="Сердце" class="heart">
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector('.reveal-button');
+        const hiddenMessage = document.querySelector('.hidden-message');
+
+        button.addEventListener('click', () => {
+            hiddenMessage.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

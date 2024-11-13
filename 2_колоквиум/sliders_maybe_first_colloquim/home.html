@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РЫБЫ.НЕТ - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            position: relative;
+        }
+        header nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        header nav ul li a:hover {
+            color: #f44336;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .intro {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .intro h1 {
+            margin: 0;
+        }
+        .intro p {
+            margin: 10px 0;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-item {
+            background-color: #555;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+        }
+        .feature-item h3 {
+            margin-top: 0;
+        }
+        .feature-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .cta {
+            background-color: #f44336;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>РЫБЫ.НЕТ</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Главная</a></li>
+                <li><a href="index.html">Новости</a></li>
+                <li><a href="galerey.html">Галерея</a></li>
+                <li><a href="kontakty.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Добро пожаловать на РЫБЫ.НЕТ!</h1>
+            <p>Мы - ваш надежный источник новостей и информации о рыбалке, отдыхе на природе и приключениях. Здесь вы найдете актуальные советы, репортажи и много полезной информации для всех любителей рыбалки.</p>
+            <button class="cta">Подписаться на обновления</button>
+        </div>
+
+        <h2>Почему выбирают нас?</h2>
+        <div class="features">
+            <div class="feature-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJzYcNlllK5AmUf62kUMUPvAGFHENGJW_1g&s" alt="Прогноз погоды">
+                <h3>Актуальные прогнозы погоды</h3>
+                <p>Мы предоставляем самые точные прогнозы погоды, чтобы ваши рыбалки всегда проходили под ясным небом.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuw45kDD2kEa1qxD3CRVK6_t3VF3-n5YmFpg&s" alt="Советы по рыбалке">
+                <h3>Полезные советы</h3>
+                <p>Наши эксперты делятся лучшими практиками и советами по успешной рыбалке. От новичков до профессионалов - у нас найдется что-то для всех.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXD2jz4Xr4PT66JslszXH6kI2troPxwKE5A&s" alt="Прокат лодок">
+                <h3>Услуги и прокат</h3>
+                <p>Мы предлагаем прокат лодок и снаряжения, чтобы ваше время на воде было максимально комфортным и продуктивным.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

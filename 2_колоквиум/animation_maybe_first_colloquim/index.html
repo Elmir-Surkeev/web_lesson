@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation ES</title>
+<style>
+    
+     .container {
+    margin: 0 auto;        
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .inner-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 4s linear infinite;
+    transform-origin: 150% 150%; /* Центр вращения */
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .button {
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+  }
+  .button1 {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: colorChange 3s infinite; /* Запускаем анимацию */
+  }
+  .hey{
+    display: flex;
+    margin-top: 100px;
+
+    justify-content: center;
+  }
+
+  /* Анимация изменения цвета */
+  @keyframes colorChange {
+    0% {
+      background-color: #007bff;
+    }
+    50% {
+      background-color: #ff5722;
+    }
+    100% {
+      background-color: #007bff;
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  h1{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <h1>Анимаций ES</h1>
+    <div class="container">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+      </div>
+
+<div class="hey">
+    <button class="button">Cirle cirle to do around cirle</button>
+    <button class="button1">Cirle with change color</button>
+</div>
+
+</body>
+</html>

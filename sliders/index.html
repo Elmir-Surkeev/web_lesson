@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmir ES</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+h1{
+    margin-left: -1100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    margin-top: 20px;
+
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+        body{
+            background-color: beige;
+        }
+        .slider-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .slider {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .slide {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            
+        }
+        .dd{
+            
+        }
+
+        .slide img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>   
+        <h1>Мой Сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider-container">
+        <h2>Медведи</h2>
+        <div class="slider">
+            <div class="slide">
+                <img src="./Без названия.jpeg" alt="Отличная погода!">
+               <div class="dd">
+                <h3>Отличная медведь!</h3>
+                <p>Синоптики обещают хорошую погоду в течение всего сезона!</p>
+                <button>Подробнее</button>
+               </div>
+            </div>
+            <div class="slide">
+                <img src="./Без названия.jpeg" alt="Открытие осеннего сезона">
+                <h3>Открытие зимнего сезона</h3>
+                <p>В минувшую субботу мы открыли осенний сезон!</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="slide">
+                <img src="./Без названия.jpeg" alt="Прокат лодок">
+                <h3>Черный медведь</h3>
+                <p>Для удобства наших гостей мы организовали прокат лодок.</p>
+                <button>Подробнее</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Сатыбальдиев Нуржалил</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6d5dfc, #8f88ff);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .cta {
+            display: inline-block;
+            background: #6d5dfc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .cta:hover {
+            background: #574bdc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Привет, я Сатыбальдиев Нуржалил</h1>
+        <p>Создаю адаптивные и красивые сайты с HTML и CSS</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Адаптивная Верстка</h2>
+            <p>Мои сайты корректно отображаются на всех устройствах, будь то телефон или планшет.</p>
+            <a href="#" class="cta">Посмотреть работу</a>
+        </div>
+
+        <div class="card">
+            <h2>Оптимизация и Скорость</h2>
+            <p>Я стараюсь создавать легкий код, чтобы страницы загружались максимально быстро.</p>
+            <a href="#" class="cta">Посмотреть работу</a>
+        </div>
+
+        <div class="card">
+            <h2>Интерактивные Элементы</h2>
+            <p>Использую современные CSS-анимации для создания привлекательного пользовательского интерфейса.</p>
+            <a href="#" class="cta">Посмотреть работу</a>
+        </div>
+    </div>
+</body>
+</html>
